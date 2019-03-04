@@ -4,10 +4,13 @@ OBJS = $(SOURCES:%.c=%.o )
 FLAGS= -std=c11 -Wall 
 LIBS = -lkcapi
 
-all: $(NAME)
+all: $(NAME) testBenchAESAsync
+
+testBenchAESAsync: bench_ac_ecb_aes.c
+	gcc -o $@ $^ $(LIBS)
 
 $(NAME): $(OBJS) 
-	gcc $(LIBS) -o $@ $^ 
+	gcc  -o $@ $^ $(LIBS)
 
 %.o: %.c
 	gcc -c $(FLAGS) $<
