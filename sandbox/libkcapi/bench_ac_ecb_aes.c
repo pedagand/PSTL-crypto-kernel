@@ -9,7 +9,7 @@
 
 int test=0;
 
-int test_async(uint8_t key_length,const char* ciphername,const char* file_name){
+int test_async(uint8_t key_length,const char* ciphername){
 
     //init handle
     struct kcapi_handle *handle1;
@@ -104,9 +104,9 @@ int test_async(uint8_t key_length,const char* ciphername,const char* file_name){
 
 int main(int argc, char const *argv[])
 {
-    test_async(16,"ecb(aes)","benchmark_AES_async");
-    test_async(24,"ecb(aes)","benchmark_AES_async");
-    test_async(32,"ecb(aes)","benchmark_AES_async");
+    test_async(16,"ecb(aes)");
+    test_async(24,"ecb(aes)");
+    test_async(32,"ecb(aes)");
 
     return 0;
 }

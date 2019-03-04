@@ -16,4 +16,4 @@ $(NAME): $(OBJS)
 	gcc -c $(FLAGS) $<
 
 clean:
-	rm -f $(NAME) $(OBJS)
+	rm -f $(NAME) $(OBJS) testBenchAESAsync
