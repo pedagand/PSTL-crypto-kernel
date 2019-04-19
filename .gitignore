@@ -1,4 +1,7 @@
-testBenchAES
+# CLION files 
+.idea/
+CMakeLists.txt
+cmake-build-debug/
 
 
 # Prerequisites

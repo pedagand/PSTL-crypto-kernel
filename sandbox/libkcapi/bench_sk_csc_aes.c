@@ -9,7 +9,6 @@
 
 
 #define IV_SIZE 16
-#define NB_BLOC 1000
 #define SECONDS 1
 
 static uint8_t key_sizes []={16,24,32,0}; 
