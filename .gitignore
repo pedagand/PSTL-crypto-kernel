@@ -1,4 +1,3 @@
-testBenchAES
 
 
 # Prerequisites
@@ -53,3 +52,17 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+
+#Clion
+.idea
+cmake-build-debug
+CMakeLists.txt
+
+#output
+
+*.*o
+*.mod.c
+
+#vscode
+.vscode/ 
