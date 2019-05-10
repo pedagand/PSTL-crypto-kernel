@@ -66,3 +66,6 @@ CMakeLists.txt
 
 #vscode
 .vscode/ 
+
+*.img
+
