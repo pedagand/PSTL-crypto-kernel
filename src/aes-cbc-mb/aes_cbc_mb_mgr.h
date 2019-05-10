@@ -123,7 +123,7 @@ struct job_aes_cbc *aes_cbc_get_completed_job_inorder_x8(
 void aes_cbc_init_mb_mgr_inorder_x8(
 	struct aes_cbc_mb_mgr_inorder_x8 *state);
 void aes_cbc_submit_job_ooo_x8(struct aes_cbc_mb_mgr_inorder_x8 *state,
-		struct job_aes_cbc *job);
+		struct job_aes_cbc *job, u32 keylen);
 void aes_cbc_flush_job_ooo_x8(struct aes_cbc_mb_mgr_inorder_x8 *state);
 void aes_cbc_flush_job_ooo_128x8(struct aes_cbc_mb_mgr_inorder_x8 *state);
 void aes_cbc_flush_job_ooo_192x8(struct aes_cbc_mb_mgr_inorder_x8 *state);

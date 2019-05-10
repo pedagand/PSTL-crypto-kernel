@@ -18,5 +18,5 @@ ifeq ($(avx_supported),yes)
 	obj-$(CONFIG_CRYPTO_AES_CBC_MB) += aes-cbc-mb.o
 	aes-cbc-mb-y := $(dec_support) aes_cbc_mb.o aes_mb_mgr_init.o \
 			mb_mgr_inorder_x8_asm.o mb_mgr_ooo_x8_asm.o \
-			aes_cbc_enc_x8.o
+			aes_cbc_enc_x8.o submit.o
 endif
